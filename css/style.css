@@ -200,46 +200,6 @@ img {
 }
 
 /* ==========================
-   カード（最新刊）共通
-========================== */
-.new-arrivals {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 16px;
-}
-
-.new-release {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 60px;
-}
-
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 14px;
-}
-
-.card {
-    display: block;
-}
-
-.card-image {
-    aspect-ratio: 3 / 4;
-    background-color: #cccccc;
-    color: #666666;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-}
-
-.card-title {
-    margin-top: 6px;
-    font-size: 12px;
-}
-
-/* ==========================
    新着作品の日付タブ
 ========================== */
 .date-tabs {
@@ -296,35 +256,6 @@ img {
     font-size: 13px;
 }
 
-/* ==========================
-   さらに読み込む
-========================== */
-.load-more-wrapper {
-    position: relative;
-    margin-top: 20px;
-}
-
-.arrival-grid-fade {
-    opacity: 0.15;
-}
-
-.load-more-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 28px;
-    border: 2px solid #333333;
-    box-shadow:0 2px 2px  #b2b1b1;
-    border-radius: 999px;
-    background-color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    white-space: nowrap;
-}
 
 /* ==========================
    ジャンル・タグから探す
@@ -358,6 +289,152 @@ img {
     border: 2px solid #000000;
     box-shadow: 0 4px 0 #313131;
 }
+
+
+/* ==========================
+   カード（最新刊）
+========================== */
+.new-arrivals {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 16px;
+}
+
+.new-release {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 60px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+}
+
+.card {
+    display: block;
+}
+
+.card-image {
+    aspect-ratio: 3 / 4;
+    background-color: #cccccc;
+    color: #666666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border:3px solid #000 ;
+
+}
+
+.card-title {
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+/* ==========================
+   レーベル
+========================== */
+.label-search {
+    background-color: #b2b1b1;
+}
+
+.label-search-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 60px;
+}
+
+
+.card-label {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 14px;
+}
+
+.label {
+    display: block;
+    text-align: center;
+}
+
+.label-image {
+    aspect-ratio: 3 / 4;
+    background-color: #cccccc;
+    color: #666666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 3px solid #000;
+}
+
+.label-title {
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+/* ==========================
+   バナー一覧
+========================== */
+.banner-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 60px;
+}
+
+.banner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.none-image {
+    aspect-ratio: 7 / 2;
+    background-color: #cccccc;
+    color: #666666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 12px;
+    border: 3px solid #000;
+}
+
+/* ==========================
+   もっと見る
+========================== */
+.load-more-wrapper {
+    position: relative;
+    margin-top: 20px;
+}
+
+.arrival-grid-fade {
+    opacity: 0.15;
+}
+
+.load-more-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border: 2px solid #333333;
+    box-shadow:0 2px 2px  #b2b1b1;
+    border-radius: 999px;
+    background-color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
 
 
 /* ==========================
