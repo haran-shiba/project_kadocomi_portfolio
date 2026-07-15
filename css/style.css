@@ -234,11 +234,22 @@ img {
 .arrival-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
+    gap: 28px;
 }
 
 .arrival-card {
     display: block;
+    position: relative;
+}
+
+.arrival-card:not(:nth-child(5n))::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -14px;
+    width: 1px;
+    background-color: #dddddd;
 }
 
 .arrival-image {
@@ -325,7 +336,7 @@ img {
     justify-content: center;
     font-size: 13px;
     border:3px solid #000 ;
-
+    border-radius: 4px;
 }
 
 .card-title {
