@@ -635,6 +635,24 @@ img {
     .card-label {
         grid-template-columns: repeat(4, 1fr);
     }
+    .label-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    /* 新着作品：日付タブは横スクロールにしてページ全体がはみ出さないようにする */
+    .date-tabs {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    .date-tab {
+        flex-shrink: 0;
+    }
+    .date-tabs::-webkit-scrollbar {
+        display: none;
+    }
 
     /* バナー一覧：縦に1つずつ */
     .banner-list {
